@@ -37,7 +37,7 @@ export const Dashboard = () => {
 
   const user = session.user;
   const totalStorage = 50 * 1024 * 1024 * 1024;
-  const storageUsed = Number(user.storageUsed || 0);
+  const storageUsed = Number((user as any).storageUsed || 0);
   const usedPercentage = (storageUsed / totalStorage) * 100;
 
   const handleLogout = async () => {
