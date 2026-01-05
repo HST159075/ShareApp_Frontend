@@ -4,7 +4,6 @@ import { createAuthClient } from "better-auth/react";
 
 export const authClient = createAuthClient({
     // Live Backend URL
-    baseURL: "https://shareapp-liart.vercel.app", 
-    // Plugins ekhon-er moto faka rakhte paren ba dorkar na hole bad din
+    baseURL: "https://shareapp-liart.vercel.app",
     plugins: [ ] 
 });
