@@ -4,10 +4,11 @@ import axios from 'axios';
 // const PC_IP_ADDRESS = '192.168.1.107'; 
 
 const apiClient = axios.create({
-  baseURL: `http://192.168.1.107:5000/api`, 
+  baseURL: `https://shareapp-liart.vercel.app/api`, 
   headers: {
     'Content-Type': 'application/json',
   },
+  withCredentials: true
 });
 
 export default apiClient;

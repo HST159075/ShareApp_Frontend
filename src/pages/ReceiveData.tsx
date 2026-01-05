@@ -100,7 +100,7 @@ const ReceiveData = () => {
 
                   {/* IMPORTANT: Ekhane Download Link dynamic kora hoyeche */}
                   <a
-                    href={`http://192.168.1.107:5000/api/download/${
+                    href={`https://shareapp-liart.vercel.app/api/download/${
                       data.shareCode || code
                     }?action=download`}
                     className="inline-block w-full bg-slate-800 text-white py-3 rounded-xl text-sm font-bold active:scale-95 transition-transform shadow-lg text-center"
